@@ -147,8 +147,8 @@ const BigCalendar = () => {
   };
 
   return (
-    <PageContainer title="Calendar" description="this is Calendar">
-      <Breadcrumb title="Calendar" subtitle="App" />
+    <PageContainer title="Store Calendar" description="this is a Store Calendar">
+      <Breadcrumb title="Store Calendar" subtitle="" />
       <BlankCard>
         {/* ------------------------------------------- */}
         {/* Calendar */}
@@ -181,7 +181,7 @@ const BigCalendar = () => {
             </Typography>
             <Typography mb={3} variant="subtitle2">
               {!update
-                ? 'To add Event kindly fillup the title and choose the event color and press the add button'
+                ? 'To add Event kindly fill up the title and choose the event color and press the add button'
                 : 'To Edit/Update Event kindly change the title and choose the event color and press the update button'}
               {slot?.title}
             </Typography>

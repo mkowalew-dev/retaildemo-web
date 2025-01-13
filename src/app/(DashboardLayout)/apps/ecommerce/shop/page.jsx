@@ -13,16 +13,16 @@ const BCrumb = [
     title: 'Home',
   },
   {
-    title: 'Shop',
+    title: 'Shopping',
   },
 ];
 const Ecommerce = () => {
   const [isMobileSidebarOpen, setMobileSidebarOpen] = React.useState(true);
 
   return (
-    <PageContainer title="Shop" description="this is Shop">
+    <PageContainer title="Shopping" description="this is online store">
       {/* breadcrumb */}
-      <Breadcrumb title="Ecom-Shop" items={BCrumb} />
+      <Breadcrumb title="Reail Demo Store" items={BCrumb} />
       <AppCard>
         {/* ------------------------------------------- */}
         {/* Left part */}

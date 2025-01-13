@@ -5,8 +5,8 @@ import BlogListing from '@/app/components/apps/blog/BlogListing';
 
 const Blog = () => {
   return (
-    <PageContainer title="Blog" description="this is Blog">
-      <Breadcrumb title="Blog app" subtitle="Get the latest news" />
+    <PageContainer title="Store Blog" description="this is Blog">
+      <Breadcrumb title="Store Blog" subtitle="Get the latest Store news" />
       {/* ------------------------------------------- */}
       {/* Blog Listing */}
       {/* ------------------------------------------- */}
