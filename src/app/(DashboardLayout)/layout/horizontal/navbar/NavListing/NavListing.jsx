@@ -20,15 +20,15 @@ const NavListing = () => {
       <List sx={{ p: 0, display: 'flex', gap: '3px', zIndex: '100' }}>
         {Menudata.map((item) => {
           if (item.children) {
-            return (
-              <NavCollapse
-                menu={item}
-                pathDirect={pathDirect}
-                hideMenu={hideMenu}
-                pathWithoutLastPart={pathWithoutLastPart}
-                level={1}
-                key={item.id} onClick={undefined} />
-            );
+            // return (
+            //   <NavCollapse
+            //     menu={item}
+            //     pathDirect={pathDirect}
+            //     hideMenu={hideMenu}
+            //     pathWithoutLastPart={pathWithoutLastPart}
+            //     level={1}
+            //     key={item.id} onClick={undefined} />
+            // );
 
             // {/********If Sub No Menu**********/}
           } else {

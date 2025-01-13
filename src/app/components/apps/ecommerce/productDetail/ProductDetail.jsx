@@ -163,7 +163,7 @@ const ProductDetail = () => {
                 fullWidth
                 component={Link}
                 variant="contained"
-                href="/apps/eco-checkout"
+                href="/apps/ecommerce/checkout"
                 onClick={() => dispatch(addToCart(product))}
               >
                 Buy Now

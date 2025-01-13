@@ -42,40 +42,40 @@ const Header = () => {
   }));
 
   return (
-    <AppBarStyled position="sticky" color="default" elevation={8}>
+    // <AppBarStyled position="sticky" color="default" elevation={8}>
       <ToolbarStyled
         sx={{
           maxWidth: customizer.isLayout === 'boxed' ? 'lg' : '100%!important',
         }}
       >
-        <Box sx={{ width: lgDown ? '45px' : 'auto', overflow: 'hidden' }}>
-          <Logo />
-        </Box>
+        {/*<Box sx={{ width: lgDown ? '45px' : 'auto', overflow: 'hidden' }}>*/}
+        {/*  /!*<Logo />*!/*/}
+        {/*</Box>*/}
         {/* ------------------------------------------- */}
         {/* Toggle Button Sidebar */}
         {/* ------------------------------------------- */}
-        {lgDown ? (
-          <IconButton
-            color="inherit"
-            aria-label="menu"
-            onClick={() => dispatch(toggleMobileSidebar())}
-          >
-            <IconMenu2 />
-          </IconButton>
-        ) : (
-          ''
-        )}
+        {/*{lgDown ? (*/}
+        {/*  <IconButton*/}
+        {/*    color="inherit"*/}
+        {/*    aria-label="menu"*/}
+        {/*    onClick={() => dispatch(toggleMobileSidebar())}*/}
+        {/*  >*/}
+        {/*    <IconMenu2 />*/}
+        {/*  </IconButton>*/}
+        {/*) : (*/}
+        {/*  ''*/}
+        {/*)}*/}
         {/* ------------------------------------------- */}
         {/* Search Dropdown */}
         {/* ------------------------------------------- */}
         <Search />
         {lgUp ? (
           <>
-            <Navigation />
+            {/*<Navigation />*/}
           </>
         ) : null}
         <Box flexGrow={1} />
-        <Stack spacing={1} direction="row" alignItems="center">
+        <Stack spacing={1} direction="row" alignItems="right">
           <Language />
           {/* ------------------------------------------- */}
           {/* Ecommerce Dropdown */}
@@ -88,7 +88,7 @@ const Header = () => {
           <Profile />
         </Stack>
       </ToolbarStyled>
-    </AppBarStyled>
+    // </AppBarStyled>
   );
 };
 

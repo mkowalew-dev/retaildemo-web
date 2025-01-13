@@ -6,8 +6,8 @@ import "./global.css";
 
 
 export const metadata = {
-  title: 'Modernize Horizontal Demo',
-  description: 'Modernize Horizontal kit',
+  title: 'Retail Demo Store Horizontal',
+  description: 'Retail Demo Store Horizontal kit',
 }
 
 export default function RootLayout({ children }) {

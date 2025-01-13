@@ -23,7 +23,7 @@ import AppLinks from './AppLinks';
 import QuickLinks from './QuickLinks';
 
 const MobileRightSidebar = () => {
-  const [showDrawer, setShowDrawer] = useState(false);
+  const [showDrawer, setShowDrawer] = useState(true);
 
   const [open, setOpen] = React.useState(true);
 

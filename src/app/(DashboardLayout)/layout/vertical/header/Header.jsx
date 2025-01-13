@@ -46,22 +46,22 @@ const Header = () => {
         {/* ------------------------------------------- */}
         {/* Toggle Button Sidebar */}
         {/* ------------------------------------------- */}
-        <IconButton
-          color="inherit"
-          aria-label="menu"
-          onClick={
-            lgUp
-              ? () => dispatch(toggleSidebar())
-              : () => dispatch(toggleMobileSidebar())
-          }
-        >
-          <IconMenu2 size="20" />
-        </IconButton>
+        {/*<IconButton*/}
+        {/*  color="inherit"*/}
+        {/*  aria-label="menu"*/}
+        {/*  onClick={*/}
+        {/*    lgUp*/}
+        {/*      ? () => dispatch(toggleSidebar())*/}
+        {/*      : () => dispatch(toggleMobileSidebar())*/}
+        {/*  }*/}
+        {/*>*/}
+          {/*<IconMenu2 size="20" />*/}
+        {/*</IconButton>*/}
 
         {/* ------------------------------------------- */}
         {/* Search Dropdown */}
         {/* ------------------------------------------- */}
-        <Search />
+
         {lgUp ? (
           <>
             <Navigation />
@@ -70,6 +70,7 @@ const Header = () => {
 
         <Box flexGrow={1} />
         <Stack spacing={1} direction="row" alignItems="center">
+          <Search />
           <Language />
 
           {/* ------------------------------------------- */}
