@@ -4,7 +4,11 @@ import GoogleProvider from 'next-auth/providers/google';
 import GitHubProvider from 'next-auth/providers/github';
 
 const handler = NextAuth({
-  site: process.env.NEXTAUTH_URL || 'http://localhost:3000',
+  session: {
+    // Seconds - How long until an idle session expires and is no longer valid.
+    maxAge: 1 * 1 * 60 * 60, //  days
+  },
+  site: process.env.NEXTAUTH_URL,
   providers: [
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID,
@@ -24,7 +28,7 @@ const handler = NextAuth({
         // Add your own authentication logic here
         if (credentials.username === 'presales' && credentials.password === 'demo123') {
           // Return user object if credentials are valid
-          return Promise.resolve({ id: 1, name: 'Admin', email: 'admin@example.com' });
+          return Promise.resolve({ id: 1, name: 'Presales', email: 'presales@retaildemo.net' });
         } else {
           // Return null if credentials are invalid
           return Promise.resolve(null);

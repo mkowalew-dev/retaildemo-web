@@ -17,6 +17,7 @@ import Search from "./Search";
 import Language from "./Language";
 import Navigation from "./Navigation";
 import MobileRightSidebar from "./MobileRightSidebar";
+import Cart from "@/app/(DashboardLayout)/layout/vertical/header/Cart";
 
 const Header = () => {
   const lgUp = useMediaQuery((theme) => theme.breakpoints.up("lg"));
@@ -71,7 +72,8 @@ const Header = () => {
         <Box flexGrow={1} />
         <Stack spacing={1} direction="row" alignItems="center">
           <Search />
-          <Language />
+          {/*<Language />*/}
+          <Cart />
 
           {/* ------------------------------------------- */}
           {/* End Ecommerce Dropdown */}

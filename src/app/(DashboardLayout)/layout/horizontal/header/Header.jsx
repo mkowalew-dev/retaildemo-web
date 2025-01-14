@@ -17,6 +17,7 @@ import Search from '../../vertical/header/Search';
 import Language from '../../vertical/header/Language';
 import Navigation from '../../vertical/header/Navigation';
 import Logo from '../../shared/logo/Logo';
+import Cart from "@/app/(DashboardLayout)/layout/vertical/header/Cart";
 
 const Header = () => {
   const lgDown = useMediaQuery((theme) => theme.breakpoints.down('lg'));
@@ -76,7 +77,8 @@ const Header = () => {
         ) : null}
         <Box flexGrow={1} />
         <Stack spacing={1} direction="row" alignItems="right">
-          <Language />
+          {/*<Language />*/}
+          <Cart />
           {/* ------------------------------------------- */}
           {/* Ecommerce Dropdown */}
           {/* ------------------------------------------- */}
